@@ -1,0 +1,85 @@
+#root {
+  max-width: 3280px;
+  max-height: 1440px;
+  height: 90vh;
+  width: 100vw;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  overflow-y: auto;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.gallery {
+  padding: 2em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-card {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #000000;
+  background-color: #000000;
+  cursor: zoom-in;
+  height: 150px;
+  width: 150px;
+  margin: 0.2em;
+  border-radius: 8px;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  transition: background-color 0.25s, border-color 0.25s;
+}
+
+.image-object {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.image-card:hover {
+  border-color: #ff6600;
+  background-color: #646cff;
+  transition: transform 0.25s ease-in-out;
+  transform: scale(1.2);
+}
+.image-card:focus,
+.image-card:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
